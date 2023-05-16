@@ -1,13 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    height: 100%;
+    width: 100%;
+    font-family: 'Space Mono', monospace;
+    background-color: #E6D7CF;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.demoWrapper{
+    width: 50vw;
+    height: 50vh;
+    padding: 10vw;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    /* border: solid 2px #d2c3bc;
+    border-radius: 40px; */
+    box-sizing: border-box;
 }

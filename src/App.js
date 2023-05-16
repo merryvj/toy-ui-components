@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useRef, useEffect, useState } from "react";
+import Slider from "./components/slider";
 
-function App() {
+import mapboxgl from "!mapbox-gl"; // eslint-disable-line import/no-webpack-loader-syntax
+
+mapboxgl.accessToken =
+  "pk.eyJ1IjoibXZpYW5nIiwiYSI6ImNqd205NDh6ZzAwMTIzeG1nZXR0ZTNqMHkifQ.vsrJM2hzndVmFHA2gzS2Rw";
+
+export default function App() {
+
+  const [state, setState] = useState(0);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+     <div className="demoWrapper">
+      <Slider value={state} onChange={(value) => setState(value)}></Slider>
+     </div>
+
     </div>
   );
 }
-
-export default App;
