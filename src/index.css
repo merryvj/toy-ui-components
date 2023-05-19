@@ -8,13 +8,21 @@ body {
 }
 
 .demoWrapper{
-    width: 50vw;
+    width: max(50vw, 800px);
     height: 50vh;
     padding: 10vw;
     display: flex;
     align-items: center;
+    justify-content: center;
     margin: auto;
-    /* border: solid 2px #d2c3bc;
-    border-radius: 40px; */
+    margin-bottom: 10vh;
+    border: solid 2px rgba(0, 0, 0, 0.05);
+    border-radius: 40px;
     box-sizing: border-box;
 }
+
+@media screen and (max-width: 800px) {
+    .demoWrapper{
+        border: none;
+    }
+  }

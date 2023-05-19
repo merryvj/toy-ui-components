@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import Slider from "./components/slider";
+import Tabs from "./components/tabs";
 
 import mapboxgl from "!mapbox-gl"; // eslint-disable-line import/no-webpack-loader-syntax
 
@@ -14,6 +15,10 @@ export default function App() {
 
      <div className="demoWrapper">
       <Slider value={state} onChange={(value) => setState(value)}></Slider>
+     </div>
+
+     <div className="demoWrapper">
+        <Tabs></Tabs>
      </div>
 
     </div>

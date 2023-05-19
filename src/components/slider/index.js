@@ -3,8 +3,8 @@ import "./index.css";
 import { motion } from "framer-motion";
 import clamp from "lodash";
 
+const values = [":|", ":]", ":)", ":D"];
 export default function Slider({ value, onChange }) {
-  const values = [10, 20, 30, 40];
 
   const [position, setPosition] = useState(0);
   const [width, setWidth] = useState(null);
