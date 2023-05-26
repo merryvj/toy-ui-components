@@ -26,7 +26,7 @@ export default function Tabs() {
     }
 
     if (tabBounding && wrapperBounding) {
-        highlightStyles.transitionDuration = isFromNull ? "0" : "0.15s";
+        highlightStyles.transitionDuration = isFromNull ? "0ms" : "150ms";
         highlightStyles.opacity = highlighted ? 1 : 0;
         highlightStyles.width = `${tabBounding.width}px`;
         highlightStyles.transform = `translate(${

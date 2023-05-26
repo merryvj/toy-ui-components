@@ -5,6 +5,7 @@ body {
     width: 100%;
     font-family: 'Space Mono', monospace;
     background-color: #E6D7CF;
+    cursor: none;
 }
 
 .demoWrapper{
