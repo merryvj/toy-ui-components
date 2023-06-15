@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import "./index.css";
+import "./style.css";
 import { motion } from "framer-motion";
 import clamp from "lodash";
 

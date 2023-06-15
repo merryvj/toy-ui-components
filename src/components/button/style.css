@@ -1,0 +1,8 @@
+.button-wrapper{
+    text-align: center;
+    min-width: 100px;
+    padding: 12px 20px;
+    background-color: rgb(187, 196, 143);
+    border-radius: 999px;
+    user-select: none;
+}

@@ -1,5 +1,5 @@
 import React, {useRef, useState} from "react"
-import "./index.css";
+import "./style.css";
 
 const data = ["monday", "tuesday", "wednesday", "thursday", "friday"];
 

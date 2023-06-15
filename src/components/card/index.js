@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import "./index.css";
+import "./style.css";
 import image from "./mimi.gif";
 import { Shaders, Node, GLSL } from "gl-react";
 import { Surface } from "gl-react-dom";
@@ -53,8 +53,6 @@ export default function Card(props) {
       (e.clientX - rect.left) / rect.width,
       (rect.bottom - e.clientY) / rect.height,
     ]);
-
-    console.log(mouse);
   };
 
   const cardRandomStyle = {
