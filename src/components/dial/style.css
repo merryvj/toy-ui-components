@@ -1,0 +1,130 @@
+:root {
+    --dark: #4D433D;
+    --brown: #74655c;
+    --green: #52be7d;
+    --pink: #FFAFBE;
+    --blue: #9486ff;
+
+}
+
+.check-wrapper {
+    height: 56px;
+    width: 56px;
+    background-color: cornsilk;
+    border-radius: 8px;
+    border: solid 4px #fff;
+}
+
+.check-wrapper .active {
+    border: solid 8px #fff;
+}
+
+.check-wrapper .inactive {
+
+}
+
+.check-wrapper:after {
+    content: "";
+    outline: 4px;
+}
+
+.check-inner {
+    height: 100%;
+    width: 100%;   
+}
+
+.dial-wrapper{
+    height: 64px;
+    width: 64px;
+    border-radius: 100%;
+    border: solid 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+
+}
+
+.dial {
+    position: relative;
+    height: inherit;
+    width: inherit;
+    border-radius: inherit;
+    background-color: var(--brown);
+    -webkit-filter:drop-shadow(0px 0px 2px rgba(70,70,70,0.5));
+    filter : drop-shadow(0px 0px 2px rgba(70,70,70,0.5));
+    transform: rotate(-46deg);
+}
+
+.dial:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 50%;
+    background-color: rgba(256, 256, 256, .6);
+    border-radius: 999px;
+    z-index: 2 !important;
+    
+}
+
+.dial:after{
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 32px;
+    height: 50%;
+    background-color: inherit;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.indicators {
+    border-radius: 50%;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.indicator {
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    border-radius: 100%;
+    top:51%;
+    left:51%;
+    margin: -7px;
+    background-color: var(--brown);
+    box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+.on.deg-0 {
+    background-color: var(--green);
+}
+
+.on.deg-1 {
+    background-color: var(--pink);
+}
+
+.on.deg-2 {
+    background-color: var(--blue);
+}
+
+.deg-0 {
+    transform:rotate(226deg) translate(60px)
+}
+
+
+.deg-1 {
+    transform:rotate(271deg) translate(60px)
+}
+
+.deg-2 {
+   transform:rotate(316deg) translate(60px)
+}
