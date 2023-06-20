@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const numOptions = 3;
 
-export default function Check() {
+export default function Dial() {
     const [checked, setChecked] = useState(false);
     const [active, setActive] = useState(0);
     const [direction, setDirection] = useState(1);

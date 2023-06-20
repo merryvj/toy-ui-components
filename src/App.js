@@ -5,6 +5,7 @@ import Card from "./components/card";
 import Button from "./components/button";
 import Drawer from "./components/drawer";
 import Dial from "./components/dial";
+import Window from "./components/window";
 
 export default function App() {
   const data = [
@@ -23,20 +24,24 @@ export default function App() {
   return (
     <div>
       <div className="demoWrapper">
+        <Window/>
+      </div>
+      <div className="demoWrapper">
         <Dial/>
       </div>
 
-      {/* <div className="sceneWrapper">
-        <Suspense>
-        <Drawer />
-          </Suspense>
-      </div> */}
-      
       <div className="demoWrapper">
         {data[0].items.map((item) => (
           <Card content={item.content} />
         ))}
       </div>
+
+      <div className="sceneWrapper">
+        <Suspense>
+        <Drawer />
+          </Suspense>
+      </div>
+
       <div className="demoWrapper">
         <Slider value={state} onChange={(value) => setState(value)}></Slider>
       </div>
