@@ -2,6 +2,10 @@
 
 Practice building springy, sprightly UI components in React 
 
+### Knob
+![knob](https://github.com/merryvj/toy-components-react/assets/41601131/6163afb5-30c1-4197-9d0b-cb5d390940b5)
+- Inspired by DJ mixer knobs
+
 ### Drawers
 ![drawers](https://github.com/merryvj/toy-components-react/assets/41601131/b9f2c30a-920d-418d-8f4c-bd09a8dd7cd7)
 - Built with react-three-fiber and Framer Motion
