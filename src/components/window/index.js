@@ -3,6 +3,8 @@ import "./style.css";
 import image from "./house.png"
 import { motion } from "framer-motion";
 
+
+
 export default function Window() {
     const frameRef = useRef();
     const imageRef= useRef();

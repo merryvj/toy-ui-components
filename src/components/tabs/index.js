@@ -1,13 +1,14 @@
 import React, {useRef, useState} from "react"
 import "./style.css";
 
-const data = ["monday", "tuesday", "wednesday", "thursday", "friday"];
+const data = ["All", "CUTE", "GROSS"];
 
 export default function Tabs() {
     const [tabBounding, setTabBounding] = useState(null);
     const [wrapperBounding, setWrapperBounding] = useState(null);
     const [highlighted, setHighlighted] = useState(null);
     const [isFromNull, setIsFromNull] = useState(true);
+    const [activeTab, setActiveTab] = useState(0);
 
     const wrapperRef = useRef(null);
     const highlightRef = useRef(null);
@@ -37,8 +38,8 @@ export default function Tabs() {
     return(
         <div className="tabs-wrapper" ref={wrapperRef} onMouseLeave={resetHighlight}>
             <div className="highlight" useRef={highlightRef} style={highlightStyles}></div>
-            {data.map((tab) => (
-                <div key={tab} className="tab" onMouseEnter={(e) => updateHighlight(e, tab)}>{tab}</div>
+            {data.map((tab, i) => (
+                <div key={tab} className={`tab ${activeTab == i ? 'active' :'' }`} onMouseEnter={(e) => updateHighlight(e, tab)}>{tab}</div>
             ))}
 
         </div>

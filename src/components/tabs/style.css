@@ -2,18 +2,18 @@
     position: relative;
     display: flex;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.1);
+    /* background-color: rgba(0, 0, 0, 0.1); */
     padding: 8px;
     border-radius: 999px;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .tab {
     display: inline-block;
     position: relative;
-    padding: 12px 24px;
+    padding: 8px 16px;
     z-index: 1;
-    opacity: 0.75;
+    opacity: 0.5;
     transition: opacity 0.15s;
     color: #4D433D;
 }
@@ -42,3 +42,8 @@
     transition: 0.15s ease;
     transition-property: width, transform, opacity;
 }
+
+.active {
+    opacity: 1;
+}
+

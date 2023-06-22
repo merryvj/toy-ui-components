@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState, Suspense} from "react";
+import React, { useRef, useEffect, useState, Suspense } from "react";
 import Slider from "./components/slider";
 import Tabs from "./components/tabs";
 import Card from "./components/card";
@@ -22,33 +22,64 @@ export default function App() {
 
   const [state, setState] = useState(0);
   return (
-    <div>
-      <div className="demoWrapper">
-        <Window/>
+    <>
+    {/* <nav>
+      <div className="nav__filters"><Tabs></Tabs></div>
+    </nav> */}
+    <div className="wrapper">
+      <div className="demo">
+        <div className="demo__window">
+          <Window />
+        </div>
+        <div className="demo__desc">
+          <h3>WINDOW</h3>
+        </div>
       </div>
-      <div className="demoWrapper">
-        <Dial/>
+      <div className="demo">
+        <div className="demo__window">
+          <Dial />
+        </div>
+        <div className="demo__desc">
+          <h3>DIAL</h3>
+        </div>
       </div>
 
-      <div className="demoWrapper">
-        {data[0].items.map((item) => (
+      {data[0].items.map((item) => (
+        <div className="demo">
+          <div className="demo__window">
           <Card content={item.content} />
+          </div>
+          <div className="demo__desc">
+            <h3>CARD</h3>
+          </div>
+        </div>
+  
+  
+         
         ))}
-      </div>
 
-      <div className="sceneWrapper">
+      <div className="demo">
+        <div className="demo__window" style={{padding: 0}}>
         <Suspense>
-        <Drawer />
-          </Suspense>
+              <Drawer />
+            </Suspense>
+        </div>
+        <div className="demo__desc">
+          <h3>DRAWERS</h3>
+        </div>
       </div>
 
-      <div className="demoWrapper">
+      <div className="demo">
+        <div className="demo__window">
         <Slider value={state} onChange={(value) => setState(value)}></Slider>
+        </div>
+        <div className="demo__desc">
+          <h3>SLIDER</h3>
+        </div>
       </div>
 
-      <div className="demoWrapper">
-        <Tabs></Tabs>
-      </div>
+    
     </div>
+    </>
   );
 }
