@@ -78,6 +78,15 @@ export default function App() {
         </div>
       </div>
 
+      <div className="demo">
+        <div className="demo__window">
+        <Tabs/>
+        </div>
+        <div className="demo__desc">
+          <h3>TABS</h3>
+        </div>
+      </div>
+
     
     </div>
     </>

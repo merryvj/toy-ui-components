@@ -38,6 +38,7 @@ nav h1 {
 }
 
 .demo{
+    max-width: 50vw;
     border: solid 1px rgba(0, 0, 0, 0.05);
     padding: 24px;
 }
@@ -64,7 +65,7 @@ nav h1 {
 
 
 @media screen and (max-width: 800px) {
-    .demoWrapper{
-        border: none;
+    .wrapper{
+        grid-template-columns: 1fr;
     }
   }

@@ -2,10 +2,11 @@
     position: relative;
     display: flex;
     cursor: pointer;
-    /* background-color: rgba(0, 0, 0, 0.1); */
+    background-color: rgba(0, 0, 0, 0.1);
     padding: 8px;
     border-radius: 999px;
     font-size: 1rem;
+    font-weight: 700;
 }
 
 .tab {
@@ -13,7 +14,7 @@
     position: relative;
     padding: 8px 16px;
     z-index: 1;
-    opacity: 0.5;
+    opacity: 0.75;
     transition: opacity 0.15s;
     color: #4D433D;
 }

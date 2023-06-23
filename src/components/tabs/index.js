@@ -1,7 +1,7 @@
 import React, {useRef, useState} from "react"
 import "./style.css";
 
-const data = ["All", "CUTE", "GROSS"];
+const data = ["May", "June", "July"];
 
 export default function Tabs() {
     const [tabBounding, setTabBounding] = useState(null);
@@ -39,7 +39,7 @@ export default function Tabs() {
         <div className="tabs-wrapper" ref={wrapperRef} onMouseLeave={resetHighlight}>
             <div className="highlight" useRef={highlightRef} style={highlightStyles}></div>
             {data.map((tab, i) => (
-                <div key={tab} className={`tab ${activeTab == i ? 'active' :'' }`} onMouseEnter={(e) => updateHighlight(e, tab)}>{tab}</div>
+                <div key={tab} className="tab" onMouseEnter={(e) => updateHighlight(e, tab)}>{tab}</div>
             ))}
 
         </div>
