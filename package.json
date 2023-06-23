@@ -24,6 +24,7 @@
     "react-gl-transition": "^1.19.2",
     "react-scripts": "^5.0.1",
     "react-youtube": "^10.1.0",
+    "three": "^0.153.0",
     "use-sound": "^4.0.1",
     "web-vitals": "^2.1.4"
   },
