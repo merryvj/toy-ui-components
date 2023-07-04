@@ -6,6 +6,7 @@ import Button from "./components/button";
 import Drawer from "./components/drawer";
 import Dial from "./components/dial";
 import Window from "./components/window";
+import Radial from "./components/radial";
 
 export default function App() {
   const data = [
@@ -27,6 +28,14 @@ export default function App() {
       <div className="nav__filters"><Tabs></Tabs></div>
     </nav> */}
     <div className="wrapper">
+    <div className="demo">
+        <div className="demo__window">
+          <Radial />
+        </div>
+        <div className="demo__desc">
+          <h3>WHEEL</h3>
+        </div>
+      </div>
       <div className="demo">
         <div className="demo__window">
           <Window />
@@ -69,6 +78,7 @@ export default function App() {
         </div>
       </div>
 
+    
       <div className="demo">
         <div className="demo__window">
         <Slider value={state} onChange={(value) => setState(value)}></Slider>
