@@ -1,0 +1,73 @@
+:root{
+    --dark: #4D433D;
+    --brown: #74655c;
+}
+
+
+.door {
+    height: 300px;
+    width: 200px;
+    background-color: #FFAFBE;
+    border-radius: 999px 999px 60px 60px;
+    position: relative;
+    box-shadow: inset 0 0 0px 8px var(--dark);
+    cursor: pointer;
+    
+}
+
+.door::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: inherit;
+    box-shadow:  inset 0 0 0px 14px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.door-front {
+    height: 100%;
+    width: 100%;
+    background-color: #aaa3db;
+    border-radius: inherit;
+    position: absolute;
+    transform-origin: left;
+    transition: transform 0.2s ease;
+    box-sizing: border-box;
+    border: solid 8px var(--dark);
+    z-index: 2;
+}
+
+.heart-handle{
+    height: 32px;
+    width: 32px;
+    rotate: -135deg;
+    position: absolute;
+    top: 45%;
+    right: 24px;
+    fill: #ffcf7d;
+    stroke: var(--dark);
+}
+
+/* .door-front::after{
+    content: "enter";
+    height: 32px;
+    width: 100px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(3deg);
+    background-color: #FFAFBE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+
+} */
+
+.door-front:hover{
+    transform: perspective(400px) rotateY(-8deg) scaleX(0.85);
+    perspective-origin: 0% 50%;
+}
+
+
