@@ -58,7 +58,7 @@ export default function Radial() {
 
   const clearSelection = () => {
     setSelected(null);
-    jsConfetti.clearCanvas();
+    //jsConfetti.clearCanvas();
   };
 
   const itemRotation = (index) => {
