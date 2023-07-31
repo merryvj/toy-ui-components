@@ -79,7 +79,7 @@ export default function App() {
           </div>
         </div>
         <div className="demo">
-          <div className="demo__window" style={{ padding: 0 }}>
+          <div className="demo__window" style={{ padding: "24px" }}>
             <Suspense>
               <Drawer />
             </Suspense>

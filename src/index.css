@@ -2,10 +2,10 @@
 
 body {
     height: 100%;
-    width: 100%;
+    max-width: 1600px;
     font-family: 'Space Mono', monospace;
     background-color: #E6D7CF;
-    margin: 0;
+    margin: auto;
 }
 
 nav {
@@ -30,15 +30,10 @@ nav h1 {
     font-size: 1em;
 }
 .wrapper{
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    
+    display:block;
 }
 
 .demo{
-    max-width: 50vw;
     border: solid 1px rgba(0, 0, 0, 0.05);
     padding: 24px;
 }
@@ -64,8 +59,9 @@ nav h1 {
 }
 
 
-@media screen and (max-width: 800px) {
-    .wrapper{
-        grid-template-columns: 1fr;
+@media (min-width:1000px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-  }
+}

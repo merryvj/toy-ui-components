@@ -5,8 +5,8 @@
 
 .radial-wrapper{
     position: relative;
-    height: 300px;
-    width: 300px;
+    min-height: 300px;
+    min-width: 300px;
     border-radius: 100%;
     overflow: hidden;
     border: solid 8px var(--dark);
