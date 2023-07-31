@@ -1,4 +1,4 @@
-# toy-components-react
+# Toy UI Components
 
 Practice building springy, sprightly UI components in React 
 
