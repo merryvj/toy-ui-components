@@ -1,6 +1,6 @@
 # Toy UI Components
 
-Practice building springy, sprightly UI components in React 
+Practice building springy, sprightly UI components.
 
 ### Knob
 ![knob](https://github.com/merryvj/toy-components-react/assets/41601131/6163afb5-30c1-4197-9d0b-cb5d390940b5)
