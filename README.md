@@ -4,6 +4,9 @@ Practice building springy, sprightly UI components.
 
 [Live demo playground](https://toys-3ocx.onrender.com/)
 
+### Radial Menu
+![ezgif com-video-to-gif](https://github.com/merryvj/toy-ui-components/assets/41601131/8d92825f-0f41-4ae4-bae1-82362a30ea74)
+* Inspired by radial menu inputs in games
 
 ### Knob
 ![knob](https://github.com/merryvj/toy-components-react/assets/41601131/6163afb5-30c1-4197-9d0b-cb5d390940b5)
